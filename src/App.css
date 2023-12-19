@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "IranYekan";
+  src: url(./fonts/iranyekanwebregular.ttf);
+}
+body {
+  direction: rtl;
+  font-family: IranYekan;
+}
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.dv-cost-box,
+.dv-form-container {
+  width: 40%;
+  border: 1px solid #c1c1c1;
+  border-radius: 7px;
+  margin: 5px auto;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 5px 2px #e1e1e1;
+}
+.dv-content,
+.dv-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 25px auto;
+}
+.spn-type {
+  font-weight: 700;
+}
+.spn-cost {
+  color: #ff1749;
+}
+.btn-crease,
+.btn-increase,
+.btn-delete,
+.btn-save {
+  font-family: IranYekan;
+  width: 100px;
+  height: 30px;
+  border-radius: 3px;
+  background-color: #fff;
+  outline: none;
+}
+.btn-crease:hover,
+.btn-increase:hover,
+.btn-delete:hover,
+.btn-save:hover {
+  cursor: pointer;
+  color: #fff;
+}
+.btn-crease,
+.btn-save {
+  color: #017a05;
+  border: 1px solid #017a05;
+}
+.btn-crease:hover,
+.btn-save:hover {
+  background-color: #017a05;
+}
+.btn-increase {
+  color: #1673ff;
+  border: 1px solid #1673ff;
+}
+.btn-increase:hover {
+  background-color: #1673ff;
+}
+.btn-delete {
+  color: #ff1749;
+  border: 1px solid #ff1749;
+}
+.btn-delete:hover {
+  background-color: #ff1749;
+}
+.txt-type, .txt-cost {
+  font-family: IranYekan;
+  padding: 5px 10px;
+  width: 40%;
+  outline: none;
+  border: 1px solid #5a5a5a;
+  border-radius: 7px;
+}
+.dv-button {
+  font-family: IranYekan;
+}
