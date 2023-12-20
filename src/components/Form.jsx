@@ -11,14 +11,15 @@ const Form = ({addItemToList}) => {
         setMyCosts({...myCosts, type: e.target.value});
     }
     const costHandler = (e) => {
-        setMyCosts({...myCosts, cost: e.target.value});
+        const newcCost = parseInt(e.target.value);
+        setMyCosts({...myCosts, cost: newcCost});
     }
   return (
     <div className='dv-form-container'>
-        <form className='frm-main' onSubmit={submitHandler}>
+        <form className='frm-main' id='frmMain' name='frmMain' onSubmit={submitHandler}>
             <div className='dv-content'>
-                <input type="text" className='txt-type' onChange={typeHandler} value={myCosts.type} placeholder='شرح هزینه' />
-                <input type="text" className='txt-cost' onChange={costHandler} value={myCosts.cost} placeholder='مبلغ هزینه' />
+                <input type="text" id='txtType' name='txtType' className='txt-type' onChange={typeHandler} value={myCosts.type} placeholder='شرح هزینه' />
+                <input type="text" id='txtCost' name='txtCost' className='txt-cost' onChange={costHandler} value={myCosts.cost} placeholder='مبلغ هزینه' />
             </div>
             <div className='dv-button'>
                 <button className='btn-save'>ذخیره</button>
